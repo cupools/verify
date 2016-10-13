@@ -6,10 +6,10 @@ import tesseract from 'node-tesseract'
 
 /**
  * verify captcha
- * @param [String]    src       filepath or uri
- * @param [Object]    option    option for tesseract
- * @param [Function]  convert   gm convert process, return promise
- * @return [Promise]  text
+ * @param {String}    src       filepath or uri
+ * @param {Object}    option    option for tesseract
+ * @param {Function}  convert   gm convert process, return promise
+ * @return {Promise}  text
  */
 export default function verify(src, option, convert) {
   return getSrc(src)

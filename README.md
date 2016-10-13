@@ -8,7 +8,6 @@ Make sure you have the follow environment.
 - [gm](https://github.com/aheckmann/gm#getting-started)
 - [tesseract](https://github.com/desmondmorris/node-tesseract#installation)
 
-
 ## Getting Started
 
 ```bash
