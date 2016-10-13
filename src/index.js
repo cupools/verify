@@ -36,7 +36,7 @@ function getSrc(src) {
 function reviseImg(convert) {
   return function (src) {
     if (convert) {
-      return convert(gm)
+      return convert(src, gm)
     }
 
     return new Promise(
@@ -56,7 +56,6 @@ function reviseImg(convert) {
  */
 function process(arg) {
   let defaultOpt = {
-    // config: ['digits'],
     psm: 7
   }
 
@@ -81,7 +80,7 @@ function process(arg) {
  * revise text, remove white space
  */
 function reviseText(txt) {
-  return Promise.resolve(txt.replace(' ', ''))
+  return Promise.resolve(txt.replace(/\s/g, '').replace(/\\n/g, ''))
 }
 
 /**
