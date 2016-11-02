@@ -11,7 +11,7 @@ Make sure you have the follow environment.
 ## Getting Started
 
 ```bash
-$ npm i git+ssh@github.com:cupools/verify.git
+$ npm i cupools/verify
 ```
 
 ```js
